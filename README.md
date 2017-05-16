@@ -2,6 +2,8 @@
 
 This is a online game with a Game Maker Studio client and a nodeJS server. To run it requires NodeJS and applications are included for windows and linux for testing
 
+flag is MCA{D3kI9F8DDjel3FA3Q3g9G}
+
 ### How do I get set up? ###
 
 Configure nodeJS for your OS

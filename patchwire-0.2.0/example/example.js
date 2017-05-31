@@ -31,7 +31,7 @@ function routeToRoom(tempX,tempY,roomTemp,cb) {
 var gameManager = new ClientManager();
 
 gameManager.addCommandListener('main', function(client, data) {
-    //console.log(client.clientId + ' says: ' + data.x);
+    console.log(data);
     	var roomToSend = data.room;
     	//roomToSend = roomToSend.replace(/n/g, '');
 		routeToRoom(data.x,data.y,roomToSend, function(id) {

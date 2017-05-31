@@ -163,7 +163,15 @@ class Client {
     } else {
       trimmedData = rawSocketDataString;
     }
-    const objectFromData = JSON.parse(trimmedData);
+    var objectFromData = {}
+    try {
+      objectFromData = JSON.parse(trimmedData);
+    }
+    catch (e) { 
+      console.log('in exception');
+      console.log(trimmedData);
+    }
+    
     return objectFromData;
   }
 

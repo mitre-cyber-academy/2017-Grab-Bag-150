@@ -28,7 +28,7 @@
             <string>global.flag = "MCA{n0tTh3FlAg}"
 gravity = .1;
 gravity_direction = 270;
-global.ip = "192.168.106.134"
+global.ip = "192.168.106.130"
 
 Socket = network_create_socket( network_socket_tcp );
 net_init();
@@ -142,7 +142,7 @@ if(y &lt; 0){y = yprevious; vspeed = 5;}
 
 
 
-
+if(y &gt; 2000){room_restart(); x = xstart; y = ystart; audio_play_sound(dwai,0,0)}
 
 
 
@@ -284,6 +284,7 @@ speed = 0;
           <argument>
             <kind>1</kind>
             <string>draw_sprite(sprite_index,-1,x,y)
+
 </string>
           </argument>
         </arguments>

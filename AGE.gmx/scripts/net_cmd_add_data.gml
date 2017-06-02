@@ -2,4 +2,4 @@
 // arg0 - Key
 // arg1 - Value
 
-ds_map_add(global.netCurrentData, argument0, argument1);
+ds_map_add(netCurrentData, argument0, argument1);

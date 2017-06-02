@@ -3,14 +3,14 @@
 
 // If we have a handler array already, append this handler.
 // Otherwise, add an entry to the map.
-if (ds_map_exists(global.netHandlerMap, argument0)) {
-    var handlerList = ds_map_find_value(global.netHandlerMap, argument0);
+if (ds_map_exists(netHandlerMap, argument0)) {
+    var handlerList = ds_map_find_value(netHandlerMap, argument0);
     handlerList[array_length_1d(handlerList)] = argument1;
-    ds_map_replace(global.netHandlerMap, argument0, handlerList);
+    ds_map_replace(netHandlerMap, argument0, handlerList);
 } else {
     var handlerList;
     handlerList[0] = argument1;
-    ds_map_add(global.netHandlerMap, argument0, handlerList);
+    ds_map_add(netHandlerMap, argument0, handlerList);
 }
 
 

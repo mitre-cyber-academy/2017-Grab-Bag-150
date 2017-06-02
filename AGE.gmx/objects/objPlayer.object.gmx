@@ -28,12 +28,12 @@
             <string>global.flag = "MCA{n0tTh3FlAg}"
 gravity = .1;
 gravity_direction = 270;
-global.ip = "192.168.106.130"
+global.ip = "192.168.106.134"
 
 Socket = network_create_socket( network_socket_tcp );
 net_init();
-isConnected = network_connect_raw( global.netSock , global.ip , 6900 );
-if(isConnected == 0){show_message("Could not connect to server")}
+isConnected = network_connect_raw( netSock , global.ip , 6900 );
+
 net_cmd_add_handler("connected", connectedExecuteMe);
 net_cmd_add_handler("main", handle_chat);
 
@@ -124,12 +124,7 @@ if(y &lt; 0){y = yprevious; vspeed = 5;}
     }
    
    
-   /*
-   aes_string(gh,"lhTFtq9AQj3Ay3JD",1,0,1) // 
-   gh = state_to_string();
-   
 
-/*
   
 
 
@@ -240,15 +235,7 @@ speed = 0;
             <string>net_cmd_resolve();
 
 
-/*
-    var type_event = ds_map_find_value( async_load , "type" );
-   switch( type_event ) {
-      case network_type_data:
-         var buffer = ds_map_find_value( async_load , "buffer" );
-         buffer_seek( buffer , buffer_seek_start , 0 );
-         ReceivedPacket( buffer );
-      break;
-   }
+
 </string>
           </argument>
         </arguments>

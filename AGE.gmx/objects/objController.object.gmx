@@ -85,7 +85,7 @@ draw_roundrect(x+0,y+0,x+menuWidth,y+menuHeight,0)
 draw_set_alpha(1)
 
 if(instance_exists(objPlayer)){
-  if(objPlayer.Result &gt;= 0)
+  if(objPlayer.isConnected &gt;= 0)
   {draw_set_color(c_lime); ConState =  "Connected"}
   else
   {draw_set_color(c_red)   ConState =  "DISCONNECTED"}

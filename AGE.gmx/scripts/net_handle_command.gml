@@ -2,8 +2,8 @@
 // arg0 - The command to handle
 // arg1 - The command payload ds_map from the server
 
-if (ds_map_exists(global.netHandlerMap, argument0)) {
-    var handlerList = ds_map_find_value(global.netHandlerMap, argument0);
+if (ds_map_exists(netHandlerMap, argument0)) {
+    var handlerList = ds_map_find_value(netHandlerMap, argument0);
     
     var handlerListLength = array_length_1d(handlerList);
     

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "6900:6900"
+    restart: unless-stopped

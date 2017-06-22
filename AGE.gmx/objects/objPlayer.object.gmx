@@ -172,6 +172,15 @@ if(y &gt; 2000){room_restart(); x = xstart; y = ystart; audio_play_sound(dwai,0,
             <string>
 
 
+
+move_contact_solid(direction,12)
+vspeed = 0
+
+/*
+x = xprevious;
+y = yprevious;
+speed = 0;
+
 move_contact_solid(direction,12)
 vspeed = 0
 

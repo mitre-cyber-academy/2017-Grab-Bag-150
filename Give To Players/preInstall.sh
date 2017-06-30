@@ -19,3 +19,4 @@ wget http://http.us.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+d
  dpkg -i libssl1.0.0_1.0.1t-1+deb8u6_i386.deb
 
  dpkg -i AGE.deb
+ /opt/AGE/AGE

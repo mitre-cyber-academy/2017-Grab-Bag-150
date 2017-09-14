@@ -28,7 +28,7 @@
             <string>global.flag = "MCA{n0tTh3FlAg}"
 gravity = .1;
 gravity_direction = 270;
-global.ip = "192.168.106.130"
+global.ip = "10.0.2.14"
 
 Socket = network_create_socket( network_socket_tcp );
 net_init();

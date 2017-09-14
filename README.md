@@ -26,6 +26,6 @@ the command that makes the client go to room 4 which has the MCA key on it
 
 # Flag
 
-flag is: MCA{D3kI9F8DDjel3FA3Q3g9G}
+flag is: MCA{MARIO_SUX!}
 
 
